@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Jun 16 03:03:47 2018
+# Process ID: 16076
+# Current directory: D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/impl_1/top.vdi
+# Journal file: D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
