@@ -3,12 +3,13 @@ module clock_divisor(
     input clk,
     input[1:0] turn,
     output clk_25M,
+    output clk_1K,
     output reg b_clk,
     output reg w_clk
 );
 
-    reg[1:0] num;
-    wire[1:0] next_num;
+    reg[10:0] num;
+    wire[10:0] next_num;
     reg[27:0] b_cnt;
     reg[27:0] w_cnt;
 
@@ -37,5 +38,6 @@ module clock_divisor(
            
     assign next_num = num + 1'b1;
     assign clk_25M = num[1];
+    assign clk_1K = num[10];
 
 endmodule

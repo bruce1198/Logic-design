@@ -17,6 +17,9 @@ module top(
     wire[3:0] w_in3, w_in2, w_in1, w_in0;
     // select
     wire[3:0] position_x, position_y;
+    // place
+    wire clk_1K;
+    wire[0:81] board_valid, b_or_w;
     // keyboard
     wire key_valid;
     wire[511:0] key_down;
@@ -36,6 +39,7 @@ module top(
         .clk(clk),
         .turn(turn),
         .clk_25M(clk_25MHz),
+        .clk_1K(clk_1K),
         .b_clk(b_clk),
         .w_clk(w_clk)
     );
@@ -78,6 +82,10 @@ module top(
         .w_in0(w_in0),
         .position_x(position_x),
         .position_y(position_y),
+        .clk(clk_1K),
+        .rst(rst),
+        .board_valid(board_valid),
+        .b_or_w(b_or_w),
         .h_cnt(h_cnt>>1),
         .v_cnt(v_cnt>>1),
         .pixel_addr(pixel_addr)
@@ -115,6 +123,18 @@ module top(
         .turn(turn),
         .position_x(position_x),
         .position_y(position_y)
+    );
+    place_chess place(
+        .clk(clk),
+        .rst(rst),
+        .key_down(key_down),
+        .last_change(last_change),
+        .key_valid(key_valid),
+        .turn(turn),
+        .position_x(position_x),
+        .position_y(position_y),
+        .board_valid(board_valid),
+        .b_or_w(b_or_w)
     );
     
 endmodule

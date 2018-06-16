@@ -21,35 +21,57 @@
 
 
 module mem_addr_gen(
-  input[3:0] b_in3, b_in2, b_in1, b_in0,
-  input[3:0] w_in3, w_in2, w_in1, w_in0,
-  input[3:0] position_x, position_y,
-  input[9:0] h_cnt,
-  input[9:0] v_cnt,
-  output reg [16:0] pixel_addr
+    input clk, rst,
+    input[3:0] b_in3, b_in2, b_in1, b_in0,
+    input[3:0] w_in3, w_in2, w_in1, w_in0,
+    input[3:0] position_x, position_y,
+    input[0:81] board_valid, b_or_w,
+    input[9:0] h_cnt,
+    input[9:0] v_cnt,
+    output reg [16:0] pixel_addr
 );
     
     wire[8:0] select_x, select_y;
+    reg[3:0] place_x, place_y;
     
     assign select_x = ((position_x-1)*52+12)/2;
     assign select_y = ((position_y-1)*52+13)/2;
     
-    /*always@*
-        case(position)
-            41:begin
-                select_x = 110; 
-                select_y = 110;
-            end
-        endcase*/
-    
-    always@*
+    always@(posedge clk or posedge rst)
+        if(rst) begin
+            place_x = 1;
+            place_y = 1;
+        end
+        else if(place_x==9 && place_y==9) begin
+            place_x = 1;
+            place_y = 1;
+        end
+        else if(place_x==9 && place_y != 9) begin
+            place_x = 1;
+            place_y = place_y + 1;
+        end
+        else 
+            place_x <= place_x + 1;
+        
+    always@* begin
         // -----------------board----------------------
         if (h_cnt>=0 && h_cnt<=237 && v_cnt>=0 && v_cnt<=240) begin
-            // select
-            if(h_cnt>=select_x && h_cnt<=select_x+20 && v_cnt>= select_y && v_cnt<= select_y+20)
-                pixel_addr = h_cnt+286-select_x + 320*(v_cnt-select_y+2);
+            if(board_valid[place_x+place_y*9] == 1) begin
+                // select
+                if(h_cnt>=((place_x-1)*52+12)/2 && h_cnt<=((place_x-1)*52+12)/2+20 && v_cnt>= ((place_y-1)*52+13)/2 && v_cnt<= ((place_y-1)*52+13)/2+20)
+                    pixel_addr = h_cnt+240-(((place_x-1)*52+12)/2) + 320*(v_cnt-(((place_y-1)*52+13)/2)+2);
+                else if(h_cnt>=select_x && h_cnt<=select_x+20 && v_cnt>= select_y && v_cnt<= select_y+20)
+                    pixel_addr = h_cnt+286-select_x + 320*(v_cnt-select_y+2);
+                else
+                    pixel_addr = h_cnt + 320*v_cnt;
+            end
             else
-                pixel_addr = h_cnt + 320*v_cnt;
+                // select
+                if(h_cnt>=select_x && h_cnt<=select_x+20 && v_cnt>= select_y && v_cnt<= select_y+20)
+                    pixel_addr = h_cnt+286-select_x + 320*(v_cnt-select_y+2);
+                else
+                    pixel_addr = h_cnt + 320*v_cnt;
+            
         end   
         // -----------------Bplayer timer----------------------
         else if (h_cnt>=242 && h_cnt<=262 && v_cnt>=18 && v_cnt<=38)
@@ -151,5 +173,5 @@ module mem_addr_gen(
             endcase
         else
             pixel_addr = 5; //white
-            
+    end            
 endmodule

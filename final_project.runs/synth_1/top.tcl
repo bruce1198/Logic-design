@@ -23,13 +23,14 @@ add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_projec
 set_property used_in_implementation false [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}]
 read_verilog -library xil_defaultlib {
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/OnePulse.v}
+  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v}
+  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/select_ctl.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/timer_ctl.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/down_counter.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/vga.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/clock_divisor.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/KeyboardDecoder.v}
-  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/top.v}
 }
 foreach dcp [get_files -quiet -all *.dcp] {
