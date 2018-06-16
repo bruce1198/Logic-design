@@ -35,7 +35,7 @@ module place_chess(
     reg[0:81] board_valid_next, b_or_w_next;
     wire position;
     
-    assign position = position_x + position_y*9;
+    assign position = position_x + (position_y-1)*9;
     
     always@(posedge clk or posedge rst)
         if(rst) begin
@@ -51,7 +51,7 @@ module place_chess(
         if((key_down[last_change] == 1'b1) && (key_valid == 1'b1))
             casex(last_change)
                 9'h5A: begin
-                    if(~board_valid[position]) begin // the position is empty
+                    if(~board_valid[position] && turn!=0) begin // the position is empty
                         board_valid_next[position] = 1;
                         case(turn)
                             1: b_or_w_next[position] = 0;
