@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Sun Jun 17 00:06:24 2018
+| Date         : Sun Jun 17 05:48:50 2018
 | Host         : DESKTOP-C7OAI1J running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,7 +23,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |   103 |
-| Unused register locations in slices containing registers |   652 |
+| Unused register locations in slices containing registers |   646 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             180 |          146 |
-| No           | No                    | Yes                    |             246 |          152 |
-| No           | Yes                   | No                     |              20 |           11 |
+| No           | No                    | No                     |             180 |          158 |
+| No           | No                    | Yes                    |             244 |          161 |
+| No           | Yes                   | No                     |              20 |            7 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |             580 |          169 |
+| Yes          | No                    | Yes                    |             580 |          172 |
 | Yes          | Yes                   | No                     |              66 |           17 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -131,26 +131,26 @@ Table of Contents
 |  place/b_or_w_next_reg[79]_i_2_n_1 |                                                           |                               |                1 |              1 |
 |  place/b_or_w_next_reg[7]_i_2_n_1  |                                                           |                               |                1 |              1 |
 |  clk_25MHz_BUFG                    |                                                           | rst_IBUF                      |                2 |              2 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/bits_count        | rst_IBUF                      |                3 |              4 |
+|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/bits_count        | rst_IBUF                      |                2 |              4 |
 |  clk_IBUF_BUFG                     | KeyboardCtrl_0/E[0]                                       | rst_IBUF                      |                3 |              4 |
-|  clk_IBUF_BUFG                     | pos/position_y[3]_i_1_n_1                                 | rst_IBUF                      |                2 |              4 |
-|  clk_wiz_0_inst/CLK                | b_player/min[5]_i_1_n_1                                   | rst_IBUF                      |                3 |              6 |
-|  clk_wiz_0_inst/sec_reg[0]         |                                                           | rst_IBUF                      |                2 |              6 |
-|  clk_wiz_0_inst/sec_reg[0]         | w_player/min[5]_i_1__0_n_1                                | rst_IBUF                      |                2 |              6 |
-|  clk_wiz_0_inst/CLK                |                                                           | rst_IBUF                      |                2 |              6 |
+|  clk_IBUF_BUFG                     | pos/position_y[3]_i_1_n_1                                 | rst_IBUF                      |                3 |              4 |
+|  clk_wiz_0_inst/CLK                | b_player/min[5]_i_1_n_1                                   | rst_IBUF                      |                2 |              6 |
+|  clk_wiz_0_inst/sec_reg[0]         |                                                           | rst_IBUF                      |                4 |              6 |
+|  clk_wiz_0_inst/sec_reg[0]         | w_player/min[5]_i_1__0_n_1                                | rst_IBUF                      |                3 |              6 |
+|  clk_wiz_0_inst/CLK                |                                                           | rst_IBUF                      |                4 |              6 |
 |  clk_IBUF_BUFG                     |                                                           |                               |                4 |              6 |
 |  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/rx_valid          | rst_IBUF                      |                2 |              8 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/rx_finish         | rst_IBUF                      |                2 |              8 |
-|  clk_25MHz_BUFG                    |                                                           |                               |                3 |             10 |
+|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/rx_finish         | rst_IBUF                      |                1 |              8 |
+|  clk_25MHz_BUFG                    |                                                           |                               |                5 |             10 |
 |  clk_25MHz_BUFG                    | vga_inst/line_cnt                                         | vga_inst/line_cnt[9]_i_1_n_1  |                3 |             10 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/frame[10]_i_1_n_0 | rst_IBUF                      |                3 |             11 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/key[9]_i_1_n_1                             | rst_IBUF                      |                5 |             17 |
-|  clk_25MHz_BUFG                    |                                                           | vga_inst/pixel_cnt[9]_i_1_n_1 |                9 |             18 |
-|  clk_IBUF_BUFG                     | place/b_cnt_reg[27]                                       | clk_wiz_0_inst/b_clk0         |                7 |             28 |
-|  clk_IBUF_BUFG                     | place/w_cnt_reg[27]                                       | clk_wiz_0_inst/w_clk0         |                7 |             28 |
-|  n_0_4161_BUFG                     |                                                           |                               |               57 |             82 |
-|  clk_IBUF_BUFG                     |                                                           | rst_IBUF                      |              148 |            234 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/op/E[0]                                    | rst_IBUF                      |              144 |            512 |
+|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/frame[10]_i_1_n_0 | rst_IBUF                      |                4 |             11 |
+|  clk_IBUF_BUFG                     | KeyboardCtrl_0/key[9]_i_1_n_1                             | rst_IBUF                      |                7 |             17 |
+|  clk_25MHz_BUFG                    |                                                           | vga_inst/pixel_cnt[9]_i_1_n_1 |                5 |             18 |
+|  clk_IBUF_BUFG                     | place/p_1_in2_in                                          | clk_wiz_0_inst/w_clk0         |                7 |             28 |
+|  clk_IBUF_BUFG                     | place/p_4_in                                              | clk_wiz_0_inst/b_clk0         |                7 |             28 |
+|  n_0_4171_BUFG                     |                                                           |                               |               67 |             82 |
+|  clk_IBUF_BUFG                     |                                                           | rst_IBUF                      |              153 |            232 |
+|  clk_IBUF_BUFG                     | KeyboardCtrl_0/op/E[0]                                    | rst_IBUF                      |              145 |            512 |
 +------------------------------------+-----------------------------------------------------------+-------------------------------+------------------+----------------+
 
 

@@ -1,6 +1,7 @@
 // Divide-by-4 frequency divider
 module clock_divisor(
     input clk,
+    input[1:0] winner,
     input[1:0] turn,
     output clk_25M,
     output reg b_clk,
@@ -16,21 +17,21 @@ module clock_divisor(
         num <= next_num;
 
     always@(posedge clk) 
-        if(turn==1 && b_cnt == 50000000) begin
+        if(turn==1 && winner==0 && b_cnt == 50000000) begin
             b_clk = ~b_clk;
             b_cnt = 0;
         end
-        else if(turn==1)
+        else if(turn==1 && winner==0)
             b_cnt = b_cnt + 1;
         else
             b_cnt = b_cnt;
             
     always@(posedge clk)
-        if(turn==2 && w_cnt == 50000000) begin
+        if(turn==2 && winner==0 && w_cnt == 50000000) begin
             w_clk = ~w_clk;
             w_cnt = 0;
         end
-        else if(turn==2)
+        else if(turn==2 && winner==0)
             w_cnt = w_cnt + 1;
         else
             w_cnt = w_cnt;

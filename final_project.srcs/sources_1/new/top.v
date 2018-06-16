@@ -38,6 +38,7 @@ module top(
     
     clock_divisor clk_wiz_0_inst(
         .clk(clk),
+        .winner(winner),
         .turn(turn),
         .clk_25M(clk_25MHz),
         .b_clk(b_clk),
