@@ -26,7 +26,6 @@ read_verilog -library xil_defaultlib {
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/select_ctl.v}
-  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/timer_ctl.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/down_counter.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/vga.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/clock_divisor.v}

@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Jun 16 20:17:04 2018
-# Process ID: 19116
+# Start of session at: Sat Jun 16 22:08:53 2018
+# Process ID: 3360
 # Current directory: D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1
 # Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/top.vds
@@ -15,12 +15,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14560 
+INFO: Helper process launched with PID 3336 
+WARNING: [Synth 8-2611] redeclaration of ansi port turn is not allowed [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:37]
+WARNING: [Synth 8-976] turn has already been declared [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:37]
+WARNING: [Synth 8-2654] second declaration of turn ignored [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:37]
+INFO: [Synth 8-994] turn is declared here [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:32]
 WARNING: [Synth 8-2611] redeclaration of ansi port position_x is not allowed [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/select_ctl.v:33]
 WARNING: [Synth 8-2611] redeclaration of ansi port position_y is not allowed [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/select_ctl.v:33]
-WARNING: [Synth 8-2611] redeclaration of ansi port turn is not allowed [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/timer_ctl.v:31]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 284.465 ; gain = 77.805
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 285.359 ; gain = 77.961
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/top.v:1]
 INFO: [Synth 8-638] synthesizing module 'clock_divisor' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/clock_divisor.v:2]
@@ -33,132 +36,33 @@ INFO: [Synth 8-638] synthesizing module 'KeyboardDecoder' [D:/Users/user/Desktop
 	Parameter IS_INIT bound to: 8'b10101010 
 	Parameter IS_EXTEND bound to: 8'b11100000 
 	Parameter IS_BREAK bound to: 8'b11110000 
-INFO: [Synth 8-638] synthesizing module 'KeyboardCtrl_0' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/realtime/KeyboardCtrl_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'KeyboardCtrl_0' (2#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'KeyboardCtrl_0' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'KeyboardCtrl_0' (2#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/realtime/KeyboardCtrl_0_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'OnePulse' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/OnePulse.v:1]
 INFO: [Synth 8-256] done synthesizing module 'OnePulse' (3#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/OnePulse.v:1]
 INFO: [Synth 8-226] default block is never used [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/KeyboardDecoder.v:64]
 INFO: [Synth 8-256] done synthesizing module 'KeyboardDecoder' (4#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/KeyboardDecoder.v:1]
 INFO: [Synth 8-638] synthesizing module 'vga_controller' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/vga.v:6]
 INFO: [Synth 8-256] done synthesizing module 'vga_controller' (5#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/vga.v:6]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (6#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (6#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/realtime/blk_mem_gen_0_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'mem_addr_gen' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:23]
 INFO: [Synth 8-256] done synthesizing module 'mem_addr_gen' (7#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:23]
+WARNING: [Synth 8-350] instance 'mem_addr_gen_inst' of module 'mem_addr_gen' requires 17 connections, but only 16 given [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/top.v:72]
 INFO: [Synth 8-638] synthesizing module 'down_counter' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/down_counter.v:23]
 INFO: [Synth 8-256] done synthesizing module 'down_counter' (8#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/down_counter.v:23]
-INFO: [Synth 8-638] synthesizing module 'timer_ctl' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/timer_ctl.v:23]
-INFO: [Synth 8-256] done synthesizing module 'timer_ctl' (9#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/timer_ctl.v:23]
 INFO: [Synth 8-638] synthesizing module 'select_ctl' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/select_ctl.v:23]
-INFO: [Synth 8-256] done synthesizing module 'select_ctl' (10#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/select_ctl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'select_ctl' (9#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/select_ctl.v:23]
 INFO: [Synth 8-638] synthesizing module 'place_chess' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:52]
-INFO: [Synth 8-256] done synthesizing module 'place_chess' (11#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:23]
-WARNING: [Synth 8-3848] Net data in module/entity top does not have driver. [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/top.v:32]
-INFO: [Synth 8-256] done synthesizing module 'top' (12#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/top.v:1]
-WARNING: [Synth 8-3331] design place_chess has unconnected port position_x[3]
-WARNING: [Synth 8-3331] design place_chess has unconnected port position_x[2]
-WARNING: [Synth 8-3331] design place_chess has unconnected port position_x[1]
-WARNING: [Synth 8-3331] design place_chess has unconnected port position_y[3]
-WARNING: [Synth 8-3331] design place_chess has unconnected port position_y[2]
-WARNING: [Synth 8-3331] design place_chess has unconnected port position_y[1]
+INFO: [Synth 8-256] done synthesizing module 'place_chess' (10#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:23]
+WARNING: [Synth 8-3848] Net data in module/entity top does not have driver. [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/top.v:31]
+INFO: [Synth 8-256] done synthesizing module 'top' (11#1) [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/top.v:1]
 WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port clk
 WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port rst
 WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[0]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[10]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[11]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[12]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[13]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[14]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[15]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[16]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[17]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[18]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[19]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[20]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[21]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[22]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[23]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[24]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[25]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[26]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[27]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[28]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[29]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[30]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[31]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[32]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[33]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[34]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[35]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[36]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[37]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[38]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[39]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[40]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[41]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[42]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[43]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[44]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[45]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[46]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[47]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[48]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[49]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[50]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[51]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[52]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[53]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[54]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[55]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[56]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[57]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[58]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[59]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[60]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[61]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[62]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[63]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[64]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[65]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[66]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[67]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[68]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[69]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[70]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[71]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[72]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[73]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[74]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[75]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[76]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[77]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[78]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[79]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[80]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[81]
 WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[0]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[10]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[11]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[12]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[13]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[14]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[15]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[16]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[17]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[18]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[19]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[20]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[21]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[22]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[23]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[24]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[25]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[26]
-WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[27]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 310.305 ; gain = 103.645
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 320.215 ; gain = 112.816
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -168,19 +72,19 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 310.305 ; gain = 103.645
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 320.215 ; gain = 112.816
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'KeyboardCtrl_0' instantiated as 'KeyboardCtrl_0/inst' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/KeyboardDecoder.v:33]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'blk_mem_gen_0_inst' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/top.v:67]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'blk_mem_gen_0_inst' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/top.v:65]
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc] for cell 'KeyboardCtrl_0/inst'
-Finished Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc] for cell 'KeyboardCtrl_0/inst'
-Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
-Finished Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc] for cell 'KeyboardCtrl_0/inst'
+Finished Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc] for cell 'KeyboardCtrl_0/inst'
+Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Finished Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
 Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/constrs_1/new/Basys3_Master.xdc]
 Finished Parsing XDC File [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/constrs_1/new/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
@@ -190,26 +94,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 607.422 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 615.352 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 607.422 ; gain = 400.762
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 615.352 ; gain = 407.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 607.422 ; gain = 400.762
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 615.352 ; gain = 407.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc}, line 1).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc}, line 2).
-Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc}, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-19116-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc}, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc}, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/.Xil/Vivado-3360-DESKTOP-C7OAI1J/dcp/KeyboardCtrl_0_in_context.xdc}, line 4).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 607.422 ; gain = 400.762
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 615.352 ; gain = 407.953
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "b_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "w_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -217,10 +121,82 @@ INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "line_cnt" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:250]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:224]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1186]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1160]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1137]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1111]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1085]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1072]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1059]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1046]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1033]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1020]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:1007]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:994]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:981]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:968]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:955]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:942]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:929]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:916]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:903]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:890]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:877]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:864]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:851]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:838]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:825]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:812]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:799]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:786]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:773]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:760]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:747]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:734]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:721]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:708]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:695]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:682]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:669]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:656]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:643]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:630]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:617]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:604]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:591]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:578]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:565]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:552]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:539]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:526]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:513]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:500]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:487]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:474]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:461]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:448]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:435]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:422]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:409]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:396]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:383]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:370]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:357]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:344]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:331]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:318]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:305]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:292]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:279]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:266]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:253]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:240]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:227]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:214]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:201]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:188]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:175]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:162]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:149]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:136]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v:123]
@@ -236,10 +212,11 @@ INFO: [Synth 8-5544] ROM "position_x_next0" won't be mapped to Block RAM because
 INFO: [Synth 8-5544] ROM "position_x_next0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "position_y_next0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "position_y_next0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'board_valid_next_reg' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:55]
-WARNING: [Synth 8-327] inferring latch for variable 'b_or_w_next_reg' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:57]
+INFO: [Synth 8-5544] ROM "board_valid_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'board_valid_next_reg' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'b_or_w_next_reg' [D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/place_chess.v:63]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 607.422 ; gain = 400.762
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 615.352 ; gain = 407.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -253,45 +230,44 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 4     
-	   3 Input     17 Bit       Adders := 17    
-	   2 Input     17 Bit       Adders := 5     
-	   2 Input     11 Bit       Adders := 6     
+	   3 Input     17 Bit       Adders := 9     
+	   2 Input     17 Bit       Adders := 13    
+	   2 Input     11 Bit       Adders := 21    
 	   2 Input     10 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 4     
 	   2 Input      4 Bit       Adders := 2     
-	   3 Input      1 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	              512 Bit    Registers := 1     
 	               82 Bit    Registers := 2     
-	               11 Bit    Registers := 1     
 	               10 Bit    Registers := 3     
 	                6 Bit    Registers := 4     
 	                4 Bit    Registers := 2     
-	                2 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
 	                1 Bit    Registers := 10    
 +---Multipliers : 
 	                 6x32  Multipliers := 2     
 +---Muxes : 
 	   2 Input    512 Bit        Muxes := 1     
-	   2 Input     82 Bit        Muxes := 6     
-	   3 Input     82 Bit        Muxes := 1     
+	   2 Input     82 Bit        Muxes := 10    
+	   3 Input     82 Bit        Muxes := 3     
+	   2 Input     17 Bit        Muxes := 182   
 	  11 Input     17 Bit        Muxes := 6     
 	   8 Input     17 Bit        Muxes := 4     
-	   2 Input     17 Bit        Muxes := 38    
+	   2 Input     11 Bit        Muxes := 81    
 	  11 Input     11 Bit        Muxes := 2     
-	   2 Input     11 Bit        Muxes := 1     
 	   4 Input     10 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 2     
-	   2 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 4     
-	   2 Input      7 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 6     
 	  11 Input      3 Bit        Muxes := 4     
 	   5 Input      2 Bit        Muxes := 3     
-	   2 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 28    
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
 	   4 Input      1 Bit        Muxes := 8     
-	   3 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -302,9 +278,9 @@ Hierarchical RTL Component report
 Module clock_divisor 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     11 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               11 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 2     
@@ -339,21 +315,18 @@ Module mem_addr_gen
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 4     
-	   3 Input     17 Bit       Adders := 17    
-	   2 Input     17 Bit       Adders := 5     
-	   2 Input     11 Bit       Adders := 5     
+	   3 Input     17 Bit       Adders := 9     
+	   2 Input     17 Bit       Adders := 13    
+	   2 Input     11 Bit       Adders := 21    
 	   2 Input     10 Bit       Adders := 2     
 +---Multipliers : 
 	                 6x32  Multipliers := 2     
 +---Muxes : 
+	   2 Input     17 Bit        Muxes := 182   
 	  11 Input     17 Bit        Muxes := 6     
 	   8 Input     17 Bit        Muxes := 4     
-	   2 Input     17 Bit        Muxes := 38    
+	   2 Input     11 Bit        Muxes := 81    
 	  11 Input     11 Bit        Muxes := 2     
-	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 4     
-	   2 Input      7 Bit        Muxes := 2     
 	  11 Input      3 Bit        Muxes := 4     
 Module down_counter 
 Detailed RTL Component Info : 
@@ -364,14 +337,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 1     
-Module timer_ctl 
-Detailed RTL Component Info : 
-+---Registers : 
-	                2 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      2 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
 Module select_ctl 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -386,13 +351,18 @@ Detailed RTL Component Info :
 Module place_chess 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input      1 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
 +---Registers : 
 	               82 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     82 Bit        Muxes := 6     
-	   3 Input     82 Bit        Muxes := 1     
+	   2 Input     82 Bit        Muxes := 10    
+	   3 Input     82 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -405,18 +375,18 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 607.422 ; gain = 400.762
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 615.352 ; gain = 407.953
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "line_cnt" won't be mapped to RAM because it is too sparse
-DSP Report: Generating DSP select_y0, operation Mode is: (C:0xd)+A*(B:0x34).
-DSP Report: operator select_y0 is absorbed into DSP select_y0.
-DSP Report: operator select_y1 is absorbed into DSP select_y0.
 DSP Report: Generating DSP select_x0, operation Mode is: (C:0xc)+A*(B:0x34).
 DSP Report: operator select_x0 is absorbed into DSP select_x0.
 DSP Report: operator select_x1 is absorbed into DSP select_x0.
+DSP Report: Generating DSP select_y0, operation Mode is: (C:0xd)+A*(B:0x34).
+DSP Report: operator select_y0 is absorbed into DSP select_y0.
+DSP Report: operator select_y1 is absorbed into DSP select_y0.
 DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
 DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
 DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
@@ -424,6 +394,249 @@ DSP Report: Generating DSP pixel_addr1, operation Mode is: A*(B:0x140).
 DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
 DSP Report: Generating DSP pixel_addr0, operation Mode is: PCIN+(A:0x0):B+(C:0x11e).
 DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
 DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
 DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
 DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
@@ -487,21 +700,197 @@ DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
 DSP Report: operator pixel_addr2 is absorbed into DSP pixel_addr1.
 DSP Report: Generating DSP pixel_addr0, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffffe).
 DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
-DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x140).
-DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
-DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
-DSP Report: Generating DSP pixel_addr1, operation Mode is: A*(B:0x140).
-DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
+WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port clk
+WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port rst
+WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port board_valid[0]
+WARNING: [Synth 8-3331] design mem_addr_gen has unconnected port b_or_w[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 607.422 ; gain = 400.762
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 615.352 ; gain = 407.953
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 607.422 ; gain = 400.762
+Finished Parallel Reinference  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 615.352 ; gain = 407.953
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 109, Available = 90. Use report_utilization command for details.
+DSP Report: Generating DSP pixel_addr1, operation Mode is (post resource management): A*(B:0x140).
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): PCIN+(A:0x0):B+(C:0x11e).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr1, operation Mode is (post resource management): A*(B:0x140).
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): PCIN+(A:0x0):B+(C:0xfffffffffff3).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr1, operation Mode is (post resource management): (D+(A:0x1b))*(B:0x140).
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
+DSP Report: operator pixel_addr2 is absorbed into DSP pixel_addr1.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): PCIN+(A:0x0):B+(C:0xffffffffffe2).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): C+A*(B:0x140).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr1, operation Mode is (post resource management): (D+(A:0x5e))*(B:0x140).
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
+DSP Report: operator pixel_addr2 is absorbed into DSP pixel_addr1.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): PCIN+(A:0x0):B+(C:0x19).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr1, operation Mode is (post resource management): A*(B:0x140).
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): PCIN+(A:0x0):B+(C:0xfffffffffff3).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr1, operation Mode is (post resource management): (D+(A:0x48))*(B:0x140).
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
+DSP Report: operator pixel_addr2 is absorbed into DSP pixel_addr1.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): PCIN+(A:0x0):B+(C:0xffffffffffe2).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: Generating DSP pixel_addr1, operation Mode is (post resource management): (D+(A:0x8b))*(B:0x140).
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr1.
+DSP Report: operator pixel_addr2 is absorbed into DSP pixel_addr1.
+DSP Report: Generating DSP pixel_addr0, operation Mode is (post resource management): PCIN+(A:0x0):B+(C:0xfffffffffffe).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -510,11 +899,92 @@ DSP: Preliminary Mapping  Report (see note below)
 +-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name  | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|mem_addr_gen | (C:0xd)+A*(B:0x34)                | 10     | 6      | 4      | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |mem_addr_gen | (C:0xc)+A*(B:0x34)                | 10     | 6      | 4      | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | (C:0xd)+A*(B:0x34)                | 10     | 6      | 4      | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |mem_addr_gen | C+A*(B:0x140)                     | 10     | 9      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |mem_addr_gen | A*(B:0x140)                       | 17     | 9      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |mem_addr_gen | PCIN+(A:0x0):B+(C:0x11e)          | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |mem_addr_gen | A*(B:0x140)                       | 17     | 9      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |mem_addr_gen | A*(B:0x140)                       | 17     | 9      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
@@ -538,8 +1008,6 @@ DSP: Preliminary Mapping  Report (see note below)
 |mem_addr_gen | C+(D+(A:0x23))*(B:0x140)          | 6      | 9      | 11     | 10     | 17     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
 |mem_addr_gen | (D+(A:0x8b))*(B:0x140)            | 8      | 9      | -      | 10     | 20     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
 |mem_addr_gen | PCIN+(A:0x0):B+(C:0xfffffffffffe) | 30     | 10     | 2      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|mem_addr_gen | C+A*(B:0x140)                     | 17     | 9      | 11     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|mem_addr_gen | A*(B:0x140)                       | 17     | 9      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -549,111 +1017,10 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (num_reg[10]) is unused and will be removed from module clock_divisor.
-WARNING: [Synth 8-3332] Sequential element (num_reg[9]) is unused and will be removed from module clock_divisor.
-WARNING: [Synth 8-3332] Sequential element (num_reg[8]) is unused and will be removed from module clock_divisor.
-WARNING: [Synth 8-3332] Sequential element (num_reg[7]) is unused and will be removed from module clock_divisor.
-WARNING: [Synth 8-3332] Sequential element (num_reg[6]) is unused and will be removed from module clock_divisor.
-WARNING: [Synth 8-3332] Sequential element (num_reg[5]) is unused and will be removed from module clock_divisor.
-WARNING: [Synth 8-3332] Sequential element (num_reg[4]) is unused and will be removed from module clock_divisor.
-WARNING: [Synth 8-3332] Sequential element (num_reg[3]) is unused and will be removed from module clock_divisor.
-WARNING: [Synth 8-3332] Sequential element (num_reg[2]) is unused and will be removed from module clock_divisor.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[10]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[11]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[12]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[13]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[14]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[15]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[16]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[17]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[18]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[19]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[20]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[21]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[22]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[23]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[24]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[25]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[26]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[27]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[28]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[29]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[30]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[31]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[32]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[33]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[34]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[35]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[36]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[37]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[38]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[39]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[40]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[41]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[42]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[43]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[44]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[45]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[46]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[47]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[48]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[49]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[50]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[51]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[52]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[53]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[54]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[55]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[56]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[57]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[58]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[59]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[60]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[61]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[62]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[63]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[64]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[65]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[66]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[67]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[68]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[69]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[70]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[71]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[72]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[73]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[74]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[75]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[76]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[77]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[78]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[79]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[80]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (board_valid_next_reg[81]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[10]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[11]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[12]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[13]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[14]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[15]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[16]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[17]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[18]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[19]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[20]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[21]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[22]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[23]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[24]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[25]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[26]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[27]) is unused and will be removed from module place_chess.
-WARNING: [Synth 8-3332] Sequential element (b_or_w_next_reg[28]) is unused and will be removed from module place_chess.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 607.422 ; gain = 400.762
+Finished Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 621.770 ; gain = 414.371
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 607.422 ; gain = 400.762
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 621.770 ; gain = 414.371
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -667,10 +1034,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 691.105 ; gain = 484.445
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 718.996 ; gain = 511.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 694.059 ; gain = 487.398
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 723.895 ; gain = 516.496
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -682,16 +1049,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 964.289 ; gain = 756.891
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 964.289 ; gain = 756.891
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 964.289 ; gain = 756.891
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -720,7 +1087,7 @@ CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnec
 CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[1]
 CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[0]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 964.289 ; gain = 756.891
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -733,7 +1100,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 964.289 ; gain = 756.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -745,25 +1112,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 964.289 ; gain = 756.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 964.289 ; gain = 756.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 964.289 ; gain = 756.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 964.289 ; gain = 756.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -783,26 +1150,26 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |KeyboardCtrl_0 |     1|
 |2     |blk_mem_gen_0  |     1|
-|3     |BUFG           |     1|
-|4     |CARRY4         |    85|
-|5     |DSP48E1        |     9|
-|6     |DSP48E1_1      |     5|
-|7     |DSP48E1_2      |     7|
-|8     |DSP48E1_3      |     5|
-|9     |DSP48E1_4      |     3|
-|10    |LUT1           |    64|
-|11    |LUT2           |   109|
-|12    |LUT3           |    99|
-|13    |LUT4           |   685|
-|14    |LUT5           |   369|
-|15    |LUT6           |   596|
-|16    |MUXF7          |   132|
-|17    |MUXF8          |    33|
-|18    |FDCE           |   565|
+|3     |BUFG           |     2|
+|4     |CARRY4         |   236|
+|5     |DSP48E1        |     3|
+|6     |DSP48E1_1      |     7|
+|7     |DSP48E1_2      |    48|
+|8     |DSP48E1_3      |     4|
+|9     |LUT1           |   394|
+|10    |LUT2           |   197|
+|11    |LUT3           |   402|
+|12    |LUT4           |  1222|
+|13    |LUT5           |  1408|
+|14    |LUT6           |  1518|
+|15    |MUXF7          |   157|
+|16    |MUXF8          |    42|
+|17    |XORCY          |     1|
+|18    |FDCE           |   729|
 |19    |FDPE           |     8|
-|20    |FDRE           |    82|
+|20    |FDRE           |    89|
 |21    |FDSE           |     2|
-|22    |LD             |     4|
+|22    |LD             |   164|
 |23    |IBUF           |     2|
 |24    |OBUF           |    14|
 +------+---------------+------+
@@ -811,36 +1178,36 @@ Report Instance Areas:
 +------+--------------------+----------------+------+
 |      |Instance            |Module          |Cells |
 +------+--------------------+----------------+------+
-|1     |top                 |                |  2903|
-|2     |  KeyboardCtrl_0    |KeyboardDecoder |  1395|
+|1     |top                 |                |  6673|
+|2     |  KeyboardCtrl_0    |KeyboardDecoder |  1396|
 |3     |    op              |OnePulse        |     3|
-|4     |  b_player          |down_counter    |   170|
+|4     |  b_player          |down_counter    |   212|
 |5     |  clk_wiz_0_inst    |clock_divisor   |   146|
-|6     |  control           |timer_ctl       |    10|
-|7     |  mem_addr_gen_inst |mem_addr_gen    |   373|
-|8     |  place             |place_chess     |    11|
-|9     |  pos               |select_ctl      |    24|
-|10    |  vga_inst          |vga_controller  |   572|
-|11    |  w_player          |down_counter_0  |   170|
+|6     |  mem_addr_gen_inst |mem_addr_gen    |   179|
+|7     |  place             |place_chess     |   694|
+|8     |  pos               |select_ctl      |   262|
+|9     |  vga_inst          |vga_controller  |  3198|
+|10    |  w_player          |down_counter_0  |   204|
 +------+--------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 782.801 ; gain = 576.141
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 964.289 ; gain = 756.891
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 12 critical warnings and 413 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 782.801 ; gain = 279.023
-Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:58 . Memory (MB): peak = 782.801 ; gain = 576.141
+Synthesis finished with 0 errors, 12 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 964.289 ; gain = 461.754
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 964.289 ; gain = 756.891
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 465 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  LD => LDCE: 4 instances
+  A total of 165 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 1 instances
+  LD => LDCE: 164 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-67 Infos, 208 Warnings, 12 Critical Warnings and 0 Errors encountered.
+136 Infos, 20 Warnings, 12 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 782.801 ; gain = 576.141
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 782.801 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Jun 16 20:18:06 2018...
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 964.289 ; gain = 756.891
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 964.289 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 16 22:10:14 2018...
