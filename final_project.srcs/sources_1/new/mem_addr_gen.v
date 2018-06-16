@@ -26,6 +26,7 @@ module mem_addr_gen(
     input[3:0] w_in3, w_in2, w_in1, w_in0,
     input[3:0] position_x, position_y,
     input[0:81] board_valid, b_or_w,
+    input[1:0] winner,
     input[9:0] h_cnt,
     input[9:0] v_cnt,
     output reg [16:0] pixel_addr
@@ -1195,6 +1196,23 @@ module mem_addr_gen(
                 8: pixel_addr = h_cnt-26 + 320*(v_cnt-10);
                 9: pixel_addr = h_cnt-13 + 320*(v_cnt-10);
                 default: pixel_addr = 5;
+            endcase
+        else if(h_cnt>=240 && h_cnt<=260 && v_cnt>=205 && v_cnt<=225)
+            case(winner)
+                0: pixel_addr = 5;
+                1: pixel_addr = h_cnt + 320*v_cnt;
+                2: pixel_addr = h_cnt+20 + 320*v_cnt;
+                default: pixel_addr = 5;
+            endcase
+        else if(h_cnt>=260 && h_cnt<=280 && v_cnt>=205 && v_cnt<=225)
+            case(winner)
+                0: pixel_addr = 5;
+                default: pixel_addr = h_cnt+20 + 320*v_cnt;
+            endcase
+        else if(h_cnt>=278 && h_cnt<=298 && v_cnt>=205 && v_cnt<=225)
+            case(winner)
+                0: pixel_addr = 5;
+                default: pixel_addr = h_cnt+20 + 320*v_cnt;
             endcase
         else
             pixel_addr = 5; //white

@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Jun 15 21:16:01 2018
-# Process ID: 11540
+# Start of session at: Sat Jun 16 23:47:04 2018
+# Process ID: 19660
 # Current directory: D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/blk_mem_gen_0_synth_1
 # Command line: vivado.exe -log blk_mem_gen_0.vds -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
 # Log file: D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds

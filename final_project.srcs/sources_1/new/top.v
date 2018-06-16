@@ -9,6 +9,8 @@ module top(
     output hsync,
     output vsync
 );
+    // who win
+    wire[1:0] winner;
     // timer
     wire b_clk;
     wire w_clk;
@@ -83,6 +85,7 @@ module top(
         .rst(rst),
         .board_valid(board_valid),
         .b_or_w(b_or_w),
+        .winner(winner),
         .h_cnt(h_cnt>>1),
         .v_cnt(v_cnt>>1),
         .pixel_addr(pixel_addr)
@@ -109,6 +112,7 @@ module top(
         .key_down(key_down),
         .last_change(last_change),
         .key_valid(key_valid),
+        .winner(winner),
         .turn(turn),
         .position_x(position_x),
         .position_y(position_y)
@@ -119,11 +123,27 @@ module top(
         .key_down(key_down),
         .last_change(last_change),
         .key_valid(key_valid),
+        .winner(winner),
         .turn(turn),
         .position_x(position_x),
         .position_y(position_y),
         .board_valid(board_valid),
         .b_or_w(b_or_w)
+    );
+    judge who_win(
+        .clk(clk), 
+        .rst(rst),
+        .b_in3(b_in3),
+        .b_in2(b_in2),
+        .b_in1(b_in1),
+        .b_in0(b_in0),
+        .w_in3(w_in3),
+        .w_in2(w_in2),
+        .w_in1(w_in1),
+        .w_in0(w_in0),
+        .board_valid(board_valid),
+        .b_or_w(b_or_w),
+        .winner(winner) 
     );
     
 endmodule

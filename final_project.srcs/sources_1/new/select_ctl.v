@@ -25,6 +25,7 @@ module select_ctl(
     input[511:0] key_down,
 	input[8:0] last_change,
 	input key_valid,
+	input[1:0] winner,
 	input[1:0] turn,
 	output[3:0] position_x,
 	output[3:0] position_y
@@ -43,7 +44,7 @@ module select_ctl(
             position_y = position_y_next;
         end
     always@*
-        if((key_down[last_change] == 1'b1) && (key_valid == 1'b1) && turn!=0)
+        if((key_down[last_change] == 1'b1) && (key_valid == 1'b1) && turn!=0 && winner==0)
             casex(last_change)
                 9'h75: begin
                     position_y_next =  (position_y==1)?position_y:position_y-1; //up

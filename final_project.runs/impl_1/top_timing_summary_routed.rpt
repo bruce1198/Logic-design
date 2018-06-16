@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Sat Jun 16 22:12:49 2018
+| Date         : Sun Jun 17 00:07:17 2018
 | Host         : DESKTOP-C7OAI1J running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -52,7 +52,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 862 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 864 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
  There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[0]/C (HIGH)
 
@@ -1100,7 +1100,7 @@ Table of Contents
 
  There are 12 register/latch pins with no clock driven by root clock pin: clk_wiz_0_inst/b_clk_reg/C (HIGH)
 
- There are 66 register/latch pins with no clock driven by root clock pin: clk_wiz_0_inst/num_reg[1]/C (HIGH)
+ There are 67 register/latch pins with no clock driven by root clock pin: clk_wiz_0_inst/num_reg[1]/C (HIGH)
 
  There are 12 register/latch pins with no clock driven by root clock pin: clk_wiz_0_inst/w_clk_reg/C (HIGH)
 
@@ -1268,11 +1268,13 @@ Table of Contents
 
  There are 82 register/latch pins with no clock driven by root clock pin: place/board_valid_reg[9]/C (HIGH)
 
+ There are 102 register/latch pins with no clock driven by root clock pin: place/turn_reg[0]/C (HIGH)
+
  There are 82 register/latch pins with no clock driven by root clock pin: place/turn_reg[0]_rep/C (HIGH)
 
- There are 82 register/latch pins with no clock driven by root clock pin: place/turn_reg[0]_rep__0/C (HIGH)
+ There are 48 register/latch pins with no clock driven by root clock pin: place/turn_reg[0]_rep__0/C (HIGH)
 
- There are 82 register/latch pins with no clock driven by root clock pin: place/turn_reg[1]_rep/C (HIGH)
+ There are 102 register/latch pins with no clock driven by root clock pin: place/turn_reg[1]_rep/C (HIGH)
 
  There are 82 register/latch pins with no clock driven by root clock pin: place/turn_reg[1]_rep__0/C (HIGH)
 
@@ -1292,6 +1294,10 @@ Table of Contents
 
  There are 82 register/latch pins with no clock driven by root clock pin: pos/position_y_reg[3]/C (HIGH)
 
+ There are 82 register/latch pins with no clock driven by root clock pin: who_win/winner_reg[0]/C (HIGH)
+
+ There are 82 register/latch pins with no clock driven by root clock pin: who_win/winner_reg[1]/C (HIGH)
+
 
 2. checking constant_clock
 --------------------------
@@ -1305,7 +1311,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 3047 pins that are not constrained for maximum delay. (HIGH)
+ There are 3053 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

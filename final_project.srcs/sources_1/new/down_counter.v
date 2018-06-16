@@ -34,8 +34,8 @@ module down_counter(
     
     always@(posedge clk or posedge rst)
         if(rst) begin
-            min = 10;
-            sec = 0;
+            min = 0;
+            sec = 5;
         end
         else if (sec==0 && min==0) begin
             min = 0;

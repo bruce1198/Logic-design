@@ -25,6 +25,7 @@ module place_chess(
     input[511:0] key_down,
 	input[8:0] last_change,
 	input key_valid,
+	input[1:0] winner,
 	input[3:0] position_x,
 	input[3:0] position_y,
 	output reg[0:81] board_valid,
@@ -56,7 +57,7 @@ module place_chess(
                 9'h5A: begin
                     if(turn==0)
                         turn_next = 1;
-                    else if(~board_valid[position] && turn!=0) begin // the position is empty
+                    else if(~board_valid[position] && turn!=0 && winner==0) begin // the position is empty
                         case(turn)
                             1: begin
                                 turn_next = 2;
