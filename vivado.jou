@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Jun 18 17:46:47 2018
+# Process ID: 15656
+# Current directory: D:/Users/user/Desktop/1071/Verilog/final project/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14780 D:\Users\user\Desktop\1071\Verilog\final project\final_project\final_project.xpr
+# Log file: D:/Users/user/Desktop/1071/Verilog/final project/final_project/vivado.log
+# Journal file: D:/Users/user/Desktop/1071/Verilog/final project/final_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.xpr}
+update_compile_order -fileset sources_1
