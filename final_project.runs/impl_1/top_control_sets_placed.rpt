@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Sun Jun 17 05:48:50 2018
+| Date         : Wed Jun 20 23:56:54 2018
 | Host         : DESKTOP-C7OAI1J running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -33,124 +33,124 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             180 |          158 |
-| No           | No                    | Yes                    |             244 |          161 |
-| No           | Yes                   | No                     |              20 |            7 |
+| No           | No                    | No                     |             186 |          133 |
+| No           | No                    | Yes                    |             245 |          137 |
+| No           | Yes                   | No                     |              21 |            8 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |             580 |          172 |
-| Yes          | Yes                   | No                     |              66 |           17 |
+| Yes          | No                    | Yes                    |             580 |          169 |
+| Yes          | Yes                   | No                     |              66 |           16 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------+-----------------------------------------------------------+-------------------------------+------------------+----------------+
-|            Clock Signal            |                       Enable Signal                       |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
-+------------------------------------+-----------------------------------------------------------+-------------------------------+------------------+----------------+
-|  place/b_or_w_next_reg[17]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[80]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[81]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[8]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[0]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[10]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[11]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[12]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[13]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[14]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[15]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[16]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[28]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[18]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[19]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[1]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[20]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[21]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[22]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[23]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[24]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[25]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[26]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[27]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[9]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[29]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[2]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[30]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[31]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[32]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[33]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[34]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[35]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[36]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[37]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[38]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[39]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[3]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[40]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[41]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[42]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[43]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[44]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[45]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[46]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[47]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[48]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[49]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[4]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[50]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[51]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[52]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[53]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[54]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[55]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[56]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[57]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[58]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[59]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[5]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[60]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[61]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[62]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[63]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[64]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[65]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[66]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[67]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[68]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[69]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[6]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[70]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[71]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[72]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[73]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[74]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[75]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[76]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[77]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[78]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[79]_i_2_n_1 |                                                           |                               |                1 |              1 |
-|  place/b_or_w_next_reg[7]_i_2_n_1  |                                                           |                               |                1 |              1 |
-|  clk_25MHz_BUFG                    |                                                           | rst_IBUF                      |                2 |              2 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/bits_count        | rst_IBUF                      |                2 |              4 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/E[0]                                       | rst_IBUF                      |                3 |              4 |
-|  clk_IBUF_BUFG                     | pos/position_y[3]_i_1_n_1                                 | rst_IBUF                      |                3 |              4 |
-|  clk_wiz_0_inst/CLK                | b_player/min[5]_i_1_n_1                                   | rst_IBUF                      |                2 |              6 |
-|  clk_wiz_0_inst/sec_reg[0]         |                                                           | rst_IBUF                      |                4 |              6 |
-|  clk_wiz_0_inst/sec_reg[0]         | w_player/min[5]_i_1__0_n_1                                | rst_IBUF                      |                3 |              6 |
-|  clk_wiz_0_inst/CLK                |                                                           | rst_IBUF                      |                4 |              6 |
-|  clk_IBUF_BUFG                     |                                                           |                               |                4 |              6 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/rx_valid          | rst_IBUF                      |                2 |              8 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/rx_finish         | rst_IBUF                      |                1 |              8 |
-|  clk_25MHz_BUFG                    |                                                           |                               |                5 |             10 |
-|  clk_25MHz_BUFG                    | vga_inst/line_cnt                                         | vga_inst/line_cnt[9]_i_1_n_1  |                3 |             10 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/inst/inst/Ps2Interface_i/frame[10]_i_1_n_0 | rst_IBUF                      |                4 |             11 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/key[9]_i_1_n_1                             | rst_IBUF                      |                7 |             17 |
-|  clk_25MHz_BUFG                    |                                                           | vga_inst/pixel_cnt[9]_i_1_n_1 |                5 |             18 |
-|  clk_IBUF_BUFG                     | place/p_1_in2_in                                          | clk_wiz_0_inst/w_clk0         |                7 |             28 |
-|  clk_IBUF_BUFG                     | place/p_4_in                                              | clk_wiz_0_inst/b_clk0         |                7 |             28 |
-|  n_0_4171_BUFG                     |                                                           |                               |               67 |             82 |
-|  clk_IBUF_BUFG                     |                                                           | rst_IBUF                      |              153 |            232 |
-|  clk_IBUF_BUFG                     | KeyboardCtrl_0/op/E[0]                                    | rst_IBUF                      |              145 |            512 |
-+------------------------------------+-----------------------------------------------------------+-------------------------------+------------------+----------------+
++-----------------------------------+-----------------------------------------------------------+-------------------------------+------------------+----------------+
+|            Clock Signal           |                       Enable Signal                       |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-----------------------------------+-----------------------------------------------------------+-------------------------------+------------------+----------------+
+|  pos/b_or_w_reg[2]_1[6]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[76]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[77]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[78]          |                                                           |                               |                1 |              1 |
+|  place/b_or_w_next_reg[0]_i_2_n_1 |                                                           |                               |                1 |              1 |
+|  place/b_or_w_next_reg[1]_i_2_n_1 |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[0]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[1]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[2]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[3]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[4]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[5]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[18]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[7]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[8]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[11]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[9]           |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[10]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[12]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[13]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[14]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[15]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[16]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[17]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[79]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[19]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[20]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[21]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[22]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[23]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[24]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[25]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[26]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[27]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[28]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[29]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[30]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[31]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[32]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[33]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[34]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[35]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[36]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[37]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[38]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[39]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[40]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[41]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[42]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[43]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[44]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[45]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[46]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[47]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[48]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[49]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[50]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[51]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[52]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[53]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[54]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[55]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[56]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[57]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[58]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[59]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[60]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[61]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[62]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[63]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[64]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[65]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[66]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[67]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[68]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[69]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[70]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[71]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[72]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[73]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[74]          |                                                           |                               |                1 |              1 |
+|  pos/b_or_w_reg[2]_1[75]          |                                                           |                               |                1 |              1 |
+|  clk_25MHz_BUFG                   |                                                           | rst_IBUF                      |                2 |              2 |
+|  clk_IBUF_BUFG                    | KeyboardCtrl_0/inst/inst/Ps2Interface_i/bits_count        | rst_IBUF                      |                2 |              4 |
+|  clk_IBUF_BUFG                    | KeyboardCtrl_0/E[0]                                       | rst_IBUF                      |                1 |              4 |
+|  clk_IBUF_BUFG                    | pos/position_y[3]_i_1_n_1                                 | rst_IBUF                      |                1 |              4 |
+|  clk_wiz_0_inst/CLK               | b_player/min[5]_i_1_n_1                                   | rst_IBUF                      |                2 |              6 |
+|  clk_wiz_0_inst/sec_reg[0]        |                                                           | rst_IBUF                      |                4 |              6 |
+|  clk_wiz_0_inst/sec_reg[0]        | w_player/min[5]_i_1__0_n_1                                | rst_IBUF                      |                3 |              6 |
+|  clk_wiz_0_inst/CLK               |                                                           | rst_IBUF                      |                3 |              6 |
+|  clk_IBUF_BUFG                    |                                                           |                               |                4 |              6 |
+|  clk_IBUF_BUFG                    | KeyboardCtrl_0/inst/inst/Ps2Interface_i/rx_valid          | rst_IBUF                      |                3 |              8 |
+|  clk_IBUF_BUFG                    | KeyboardCtrl_0/inst/inst/Ps2Interface_i/rx_finish         | rst_IBUF                      |                2 |              8 |
+|  clk_25MHz_BUFG                   | vga_inst/line_cnt                                         | vga_inst/line_cnt[9]_i_1_n_1  |                2 |             10 |
+|  clk_IBUF_BUFG                    | KeyboardCtrl_0/inst/inst/Ps2Interface_i/frame[10]_i_1_n_0 | rst_IBUF                      |                5 |             11 |
+|  clk_25MHz_BUFG                   |                                                           |                               |                8 |             16 |
+|  clk_IBUF_BUFG                    | KeyboardCtrl_0/key[9]_i_1_n_1                             | rst_IBUF                      |                6 |             17 |
+|  clk_25MHz_BUFG                   |                                                           | vga_inst/pixel_cnt[9]_i_1_n_1 |                6 |             19 |
+|  clk_IBUF_BUFG                    | place/p_1_in2_in                                          | clk_wiz_0_inst/w_clk0         |                7 |             28 |
+|  clk_IBUF_BUFG                    | place/p_4_in                                              | clk_wiz_0_inst/b_clk0         |                7 |             28 |
+|  n_0_5332_BUFG                    |                                                           |                               |               39 |             82 |
+|  clk_IBUF_BUFG                    |                                                           | rst_IBUF                      |              130 |            233 |
+|  clk_IBUF_BUFG                    | KeyboardCtrl_0/op/E[0]                                    | rst_IBUF                      |              144 |            512 |
++-----------------------------------+-----------------------------------------------------------+-------------------------------+------------------+----------------+
 
 

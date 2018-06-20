@@ -33,8 +33,10 @@ module top(
     wire[11:0] data;
     wire[16:0] pixel_addr;
     wire[11:0] pixel;
+    wire[16:0] pixel_addr_log;
+    wire[11:0] pixel_log;
     
-    assign {vgaRed, vgaGreen, vgaBlue} = (valid==1'b1) ? pixel:12'h0;
+    assign {vgaRed, vgaGreen, vgaBlue} = (valid==1'b1) ? (turn==0)?pixel_log:pixel:12'h0;
     
     clock_divisor clk_wiz_0_inst(
         .clk(clk),
@@ -71,6 +73,13 @@ module top(
         .addra(pixel_addr),
         .dina(data[11:0]),
         .douta(pixel)
+    );
+    blk_mem_gen_1 blk_mem_gen_1_inst(
+        .clka(clk_25MHz),
+        .wea(0),
+        .addra(pixel_addr_log),
+        .dina(data[11:0]),
+        .douta(pixel_log)
     ); 
     mem_addr_gen mem_addr_gen_inst(
         .b_in3(b_in3),
@@ -90,6 +99,13 @@ module top(
         .h_cnt(h_cnt>>1),
         .v_cnt(v_cnt>>1),
         .pixel_addr(pixel_addr)
+    );
+    mem_addr_gen_1 mem_addr_gen_1_inst(
+        .clk(clk),
+        .rst(rst),
+        .h_cnt(h_cnt>>2),
+        .v_cnt(v_cnt>>2),
+        .pixel_addr(pixel_addr_log)
     );
     down_counter b_player(
         .clk(b_clk),
