@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Wed Jun 20 23:57:34 2018
+| Date         : Thu Jun 21 02:48:54 2018
 | Host         : DESKTOP-C7OAI1J running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -52,539 +52,285 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 863 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 470 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[0]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[0]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[100]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[100]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[101]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[101]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[102]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[102]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[103]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[103]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[104]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[104]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[105]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[105]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[106]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[106]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[107]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[107]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[108]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[108]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[109]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[109]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[10]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[10]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[110]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[110]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[111]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[111]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[112]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[112]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[113]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[113]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[114]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[114]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[115]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[115]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[116]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[116]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[117]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[117]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[118]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[118]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[119]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[119]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[11]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[11]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[120]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[120]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[121]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[121]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[122]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[122]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[123]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[123]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[124]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[124]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[125]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[125]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[126]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[126]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[127]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[127]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[128]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[12]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[129]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[13]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[12]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[14]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[130]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[15]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[131]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[16]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[132]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[17]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[133]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[18]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[134]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[19]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[135]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[1]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[136]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[20]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[137]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[21]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[138]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[22]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[139]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[23]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[13]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[24]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[140]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[25]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[141]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[26]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[142]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[27]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[143]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[28]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[144]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[29]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[145]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[2]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[146]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[30]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[147]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[31]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[148]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[32]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[149]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[33]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[14]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[34]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[150]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[35]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[151]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[36]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[152]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[37]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[153]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[38]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[154]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[39]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[155]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[3]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[156]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[40]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[157]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[41]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[158]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[42]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[159]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[43]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[15]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[44]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[160]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[45]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[161]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[46]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[162]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[47]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[163]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[48]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[164]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[49]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[165]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[4]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[166]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[50]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[167]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[51]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[168]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[52]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[169]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[53]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[16]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[54]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[170]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[55]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[171]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[56]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[172]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[57]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[173]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[58]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[174]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[59]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[175]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[5]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[176]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[60]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[177]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[61]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[178]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[62]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[179]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[63]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[17]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[64]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[180]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[65]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[181]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[66]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[182]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[67]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[183]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[68]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[184]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[69]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[185]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[6]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[186]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[70]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[187]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[71]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[188]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[72]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[189]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[73]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[18]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[74]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[190]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[75]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[191]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[76]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[192]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[77]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[193]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[78]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[194]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[79]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[195]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[7]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[196]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[80]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[197]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[81]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[198]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[82]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[199]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[83]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[19]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[84]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[1]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[85]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[200]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[86]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[201]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[87]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[202]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[88]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[203]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[89]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[204]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[8]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[205]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[90]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[206]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[91]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[207]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[92]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[208]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[93]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[209]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[94]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[20]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[95]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[210]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[96]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[211]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[97]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[212]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[98]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[213]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[99]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[214]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[9]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[215]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[0]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[216]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[0]_rep/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[217]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[1]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[218]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[2]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[219]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[3]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[21]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[4]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[220]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[5]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[221]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[6]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[222]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[7]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[223]/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[9]/C (HIGH)
 
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[224]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[225]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[226]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[227]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[228]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[229]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[22]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[230]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[231]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[232]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[233]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[234]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[235]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[236]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[237]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[238]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[239]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[23]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[240]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[241]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[242]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[243]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[244]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[245]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[246]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[247]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[248]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[249]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[24]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[250]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[251]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[252]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[253]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[254]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[255]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[25]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[26]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[27]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[28]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[29]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[2]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[30]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[31]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[32]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[33]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[34]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[35]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[36]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[37]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[38]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[39]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[3]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[40]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[41]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[42]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[43]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[44]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[45]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[46]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[47]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[48]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[49]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[4]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[50]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[51]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[52]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[53]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[54]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[55]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[56]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[57]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[58]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[59]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[5]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[60]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[61]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[62]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[63]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[64]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[65]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[66]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[67]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[68]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[69]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[6]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[70]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[71]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[72]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[73]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[74]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[75]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[76]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[77]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[78]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[79]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[7]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[80]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[81]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[82]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[83]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[84]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[85]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[86]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[87]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[88]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[89]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[8]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[90]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[91]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[92]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[93]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[94]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[95]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[96]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[97]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[98]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[99]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_down_reg[9]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[0]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[1]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[2]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[3]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[4]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[5]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[6]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[7]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_reg[9]/C (HIGH)
-
- There are 164 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_valid_reg/C (HIGH)
+ There are 166 register/latch pins with no clock driven by root clock pin: KeyboardCtrl_0/key_valid_reg/C (HIGH)
 
  There are 12 register/latch pins with no clock driven by root clock pin: clk_wiz_0_inst/b_clk_reg/C (HIGH)
 
@@ -756,13 +502,9 @@ Table of Contents
 
  There are 82 register/latch pins with no clock driven by root clock pin: place/board_valid_reg[9]/C (HIGH)
 
- There are 82 register/latch pins with no clock driven by root clock pin: place/turn_reg[0]/C (HIGH)
+ There are 164 register/latch pins with no clock driven by root clock pin: place/turn_reg[0]/C (HIGH)
 
- There are 82 register/latch pins with no clock driven by root clock pin: place/turn_reg[0]_rep/C (HIGH)
-
- There are 82 register/latch pins with no clock driven by root clock pin: place/turn_reg[1]_rep/C (HIGH)
-
- There are 82 register/latch pins with no clock driven by root clock pin: place/turn_reg[1]_rep__0/C (HIGH)
+ There are 164 register/latch pins with no clock driven by root clock pin: place/turn_reg[1]/C (HIGH)
 
  There are 82 register/latch pins with no clock driven by root clock pin: pos/position_x_reg[0]/C (HIGH)
 
@@ -797,7 +539,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 3207 pins that are not constrained for maximum delay. (HIGH)
+ There are 2033 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

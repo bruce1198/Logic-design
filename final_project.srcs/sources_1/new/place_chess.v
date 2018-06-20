@@ -34,8 +34,10 @@ module place_chess(
     );
     
     reg[0:81] board_valid_next, b_or_w_next;
+    reg[0:81] board_valid_late, b_or_w_late;
     wire[6:0] position;
-    reg[1:0] turn, turn_next;
+    reg[1:0] turn_next;
+    reg late;
     
     assign position = position_x + (position_y-1)*9;
     
@@ -43,7 +45,8 @@ module place_chess(
         if(rst) begin
             board_valid <= 0;
             b_or_w <= 0;
-            turn = 0;
+            turn <= 0;
+            late <= 0;
         end
         else begin
             board_valid <= board_valid_next;
@@ -61,6 +64,15 @@ module place_chess(
                         case(turn)
                             1: begin
                                 turn_next = 2;
+                                if(late) begin
+                                    board_valid_late = board_valid;
+                                    b_or_w_late = b_or_w;
+                                end
+                                else begin
+                                    board_valid_late = board_valid_late;
+                                    b_or_w_late = b_or_w_late;
+                                    late = 1;
+                                end
                                 b_or_w_next = b_or_w;
                                 board_valid_next = board_valid;
                                 b_or_w_next[position] = 0;
@@ -68,6 +80,15 @@ module place_chess(
                             end
                             2: begin
                                 turn_next = 1;
+                                if(late) begin
+                                    board_valid_late = board_valid;
+                                    b_or_w_late = b_or_w;
+                                end
+                                else begin
+                                    board_valid_late = board_valid_late;
+                                    b_or_w_late = b_or_w_late;
+                                    late = 1;
+                                end
                                 b_or_w_next = b_or_w;
                                 board_valid_next = board_valid; 
                                 b_or_w_next[position] = 1;
@@ -85,6 +106,11 @@ module place_chess(
                         b_or_w_next = b_or_w;
                         turn_next = turn;
                     end
+                end
+                9'h29 :begin
+                    board_valid_next = board_valid_late;
+                    b_or_w_next = b_or_w_late;
+                    late = 0;
                 end
                 default:begin
                     board_valid_next = board_valid;

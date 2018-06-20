@@ -17,7 +17,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/Keyboard-Controller}} [current_project]
 add_files {{D:/Users/user/Desktop/1071/Verilog/final project/out.coe}}
-add_files {{d:/Users/user/Desktop/1071/Verilog/final project/login.coe}}
+add_files {{D:/Users/user/Desktop/1071/Verilog/final project/login.coe}}
 add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp}}
 set_property used_in_implementation false [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp}}]
 add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}

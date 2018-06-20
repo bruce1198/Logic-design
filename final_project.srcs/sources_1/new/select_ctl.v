@@ -36,12 +36,12 @@ module select_ctl(
    
     always@(posedge clk or posedge rst)
         if(rst) begin
-            position_x = 5;
-            position_y = 5;
+            position_x <= 5;
+            position_y <= 5;
         end
         else begin
-            position_x = position_x_next;
-            position_y = position_y_next;
+            position_x <= position_x_next;
+            position_y <= position_y_next;
         end
     always@*
         if((key_down[last_change] == 1'b1) && (key_valid == 1'b1) && turn!=0 && winner==0)
