@@ -62,14 +62,18 @@ set rc [catch {
   add_files -quiet {{D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.runs/synth_1/top.dcp}}
   add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp}}
   set_property netlist_only true [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp}}]
-  add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}
-  set_property netlist_only true [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}]
+  add_files -quiet {{D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}
+  set_property netlist_only true [get_files {{D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}]
   add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp}}
   set_property netlist_only true [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp}}]
+  add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.dcp}}
+  set_property netlist_only true [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.dcp}}]
   read_xdc -mode out_of_context -ref blk_mem_gen_0 -cells U0 {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc}}
   set_property processing_order EARLY [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc}}]
   read_xdc -mode out_of_context -ref blk_mem_gen_1 -cells U0 {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc}}
   set_property processing_order EARLY [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc}}]
+  read_xdc -mode out_of_context -ref blk_mem_gen_2 -cells U0 {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc}}
+  set_property processing_order EARLY [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc}}]
   read_xdc {{D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/constrs_1/new/Basys3_Master.xdc}}
   link_design -top top -part xc7a35tcpg236-1
   write_hwdef -file top.hwdef

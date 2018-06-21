@@ -27,6 +27,7 @@ module mem_addr_gen(
     input[3:0] position_x, position_y,
     input[0:81] board_valid, b_or_w,
     input[1:0] winner,
+    input b_undo, w_undo,
     input[9:0] h_cnt,
     input[9:0] v_cnt,
     output reg [16:0] pixel_addr
@@ -392,7 +393,7 @@ module mem_addr_gen(
                     pixel_addr = h_cnt + 320*v_cnt;
                 end
             end
-            else if(h_cnt>=6 && h_cnt <= 25 && v_cnt>=84 && v_cnt<=1043) begin // (4,1)
+            else if(h_cnt>=6 && h_cnt <= 25 && v_cnt>=84 && v_cnt<=103) begin // (4,1)
                 if(board_valid[28]) begin
                     case(b_or_w[28])
                         0: pixel_addr = h_cnt+234 + 320*(v_cnt-82);
@@ -1106,7 +1107,7 @@ module mem_addr_gen(
             case(b_in3)
                 0: pixel_addr = h_cnt+53 + 320*(v_cnt+35);
                 1: pixel_addr = h_cnt + 320*v_cnt;
-                default: pixel_addr = 5;
+                default: pixel_addr = 20750;
             endcase
         else if (h_cnt>=255 && h_cnt<=268 && v_cnt>=40 && v_cnt<=60) 
             case(b_in2)
@@ -1120,7 +1121,7 @@ module mem_addr_gen(
                 7: pixel_addr = h_cnt + 320*(v_cnt+35);
                 8: pixel_addr = h_cnt+13 + 320*(v_cnt+35);
                 9: pixel_addr = h_cnt+26 + 320*(v_cnt+35);
-                default: pixel_addr = 5;
+                default: pixel_addr = 20750;
             endcase
         else if (h_cnt>=268 && h_cnt<=281 && v_cnt>=40 && v_cnt<=60)
             pixel_addr = h_cnt-30 + 320*(v_cnt+72);
@@ -1132,7 +1133,7 @@ module mem_addr_gen(
                 3: pixel_addr = h_cnt-13 + 320*v_cnt;
                 4: pixel_addr = h_cnt + 320*v_cnt;
                 5: pixel_addr = h_cnt+13 + 320*v_cnt;
-                default: pixel_addr = 5;
+                default: pixel_addr = 20750;
             endcase
         else if (h_cnt>=294 && h_cnt<=307 && v_cnt>=40 && v_cnt<=60) 
             case(b_in0)
@@ -1146,7 +1147,7 @@ module mem_addr_gen(
                 7: pixel_addr = h_cnt-39 + 320*(v_cnt+35);
                 8: pixel_addr = h_cnt-26 + 320*(v_cnt+35);
                 9: pixel_addr = h_cnt-13 + 320*(v_cnt+35);
-                default: pixel_addr = 5;
+                default: pixel_addr = 20750;
             endcase
         // -----------------Wplayer timer----------------------
         else if (h_cnt>=242 && h_cnt<=262 && v_cnt>=63 && v_cnt<=83)
@@ -1155,7 +1156,7 @@ module mem_addr_gen(
             case(w_in3)
                 0: pixel_addr = h_cnt+53 + 320*(v_cnt-10);
                 1: pixel_addr = h_cnt + 320*(v_cnt-45);
-                default: pixel_addr = 5;
+                default: pixel_addr = 20750;
             endcase
         else if (h_cnt>=255 && h_cnt<=268 && v_cnt>=85 && v_cnt<=105) 
             case(w_in2)
@@ -1169,7 +1170,7 @@ module mem_addr_gen(
                 7: pixel_addr = h_cnt + 320*(v_cnt-10);
                 8: pixel_addr = h_cnt+13 + 320*(v_cnt-10);
                 9: pixel_addr = h_cnt+26 + 320*(v_cnt-10);
-                default: pixel_addr = 5;
+                default: pixel_addr = 20750;
             endcase
         else if (h_cnt>=268 && h_cnt<=281 && v_cnt>=85 && v_cnt<=105)
             pixel_addr = h_cnt-30 + 320*(v_cnt+27);
@@ -1181,7 +1182,7 @@ module mem_addr_gen(
                 3: pixel_addr = h_cnt-13 + 320*(v_cnt-45);
                 4: pixel_addr = h_cnt + 320*(v_cnt-45);
                 5: pixel_addr = h_cnt+13 + 320*(v_cnt-45);
-                default: pixel_addr = 5;
+                default: pixel_addr = 20750;
             endcase
         else if (h_cnt>=294 && h_cnt<=307 && v_cnt>=85 && v_cnt<=105) 
             case(w_in0)
@@ -1195,26 +1196,44 @@ module mem_addr_gen(
                 7: pixel_addr = h_cnt-39 + 320*(v_cnt-10);
                 8: pixel_addr = h_cnt-26 + 320*(v_cnt-10);
                 9: pixel_addr = h_cnt-13 + 320*(v_cnt-10);
-                default: pixel_addr = 5;
+                default: pixel_addr = 20750;
             endcase
-        else if(h_cnt>=240 && h_cnt<=260 && v_cnt>=205 && v_cnt<=225)
+        // ------------------------------undo-----------------------------------
+        else if(h_cnt>=265 && h_cnt<=290 && v_cnt>=28 && v_cnt<=38)
+            pixel_addr = h_cnt + 320*(v_cnt+2);
+        else if(h_cnt>=290 && h_cnt<=298 && v_cnt>=28 && v_cnt<=38)
+            case(b_undo)
+                1: pixel_addr = h_cnt + 320*(v_cnt+2);
+                0: pixel_addr = h_cnt+8 + 320*(v_cnt+2);
+                default: pixel_addr = 20750;
+            endcase
+        else if(h_cnt>=265 && h_cnt<=290 && v_cnt>=73 && v_cnt<=83)
+            pixel_addr = h_cnt + 320*(v_cnt-43);
+        else if(h_cnt>=290 && h_cnt<=298 && v_cnt>=73 && v_cnt<=83)
+            case(w_undo)
+                1: pixel_addr = h_cnt + 320*(v_cnt-43);
+                0: pixel_addr = h_cnt+8 + 320*(v_cnt-43);
+                default: pixel_addr = 20750;
+            endcase
+        // -----------------------------winner----------------------------------
+        else if(h_cnt>=240 && h_cnt<=260 && v_cnt>=205 && v_cnt<=225) 
             case(winner)
-                0: pixel_addr = 5;
+                0: pixel_addr = 20750;
                 1: pixel_addr = h_cnt + 320*v_cnt;
                 2: pixel_addr = h_cnt+20 + 320*v_cnt;
-                default: pixel_addr = 5;
+                default: pixel_addr = 20750;
             endcase
         else if(h_cnt>=260 && h_cnt<=280 && v_cnt>=205 && v_cnt<=225)
             case(winner)
-                0: pixel_addr = 5;
+                0: pixel_addr = 20750;
                 default: pixel_addr = h_cnt+20 + 320*v_cnt;
             endcase
         else if(h_cnt>=278 && h_cnt<=298 && v_cnt>=205 && v_cnt<=225)
             case(winner)
-                0: pixel_addr = 5;
+                0: pixel_addr = 20750;
                 default: pixel_addr = h_cnt+20 + 320*v_cnt;
             endcase
         else
-            pixel_addr = 5; //white
+            pixel_addr = 20750; //white
     end            
 endmodule

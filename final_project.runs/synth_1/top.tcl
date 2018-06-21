@@ -18,14 +18,21 @@ set_property target_language Verilog [current_project]
 set_property ip_repo_paths {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/Keyboard-Controller}} [current_project]
 add_files {{D:/Users/user/Desktop/1071/Verilog/final project/out.coe}}
 add_files {{D:/Users/user/Desktop/1071/Verilog/final project/login.coe}}
+add_files {{d:/Users/user/Desktop/1071/Verilog/final project/board.coe}}
+add_files {{d:/Users/user/Desktop/1071/Verilog/final project/winner.coe}}
+add_files {{d:/Users/user/Desktop/1071/Verilog/final project/winner2.coe}}
 add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp}}
 set_property used_in_implementation false [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp}}]
-add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}
-set_property used_in_implementation false [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}]
+add_files -quiet {{D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}
+set_property used_in_implementation false [get_files {{D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp}}]
 add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp}}
 set_property used_in_implementation false [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp}}]
+add_files -quiet {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.dcp}}
+set_property used_in_implementation false [get_files {{d:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.dcp}}]
 read_verilog -library xil_defaultlib {
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/OnePulse.v}
+  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen_2.v}
+  {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/vga_gen.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen_1.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/judge.v}
   {D:/Users/user/Desktop/1071/Verilog/final project/final_project/final_project.srcs/sources_1/new/mem_addr_gen.v}
